@@ -10,14 +10,14 @@
 }
 
 *{
-  font-family: var(--primary-font);
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
 }
 p {
-  color: --;
-  font-size: 1rem;
+  color: var(--dark-30);
+  font-size: 1.1rem;
 }
 
 /* Common style */
@@ -29,14 +29,17 @@ p {
   padding: 15px 36px;
   border-radius: 5px;
   border: none;
+  margin: 0 5px;
 }
 .secondary-btn {
   color: var(--primary-color);
+  background-color: transparent;
   font-size: 1.2rem;
   font-weight: 700;
   padding: 15px 36px;
   border-radius: 5px;
   border: 2px solid var(--primary-color);
+  margin: 0 5px;
 }
 .title {
   color: var(--dark);
@@ -75,4 +78,60 @@ nav li > a {
 /* Header Style */
 .header {
   background-color: var(--bg-color);
+}
+
+/* Banner Style */
+.banner {
+  padding: 30px 50px 0 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url('../images/header_bg.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+.banner .banner-content {
+  max-width: 580px;
+}
+.banner .banner-content .banner-greeting {
+  font-size: 2.5rem;
+  color: var(--dark-50);
+  margin-bottom: 20px;
+}
+.banner .banner-content .banner-title {
+  font-size: 5rem;
+  color: var(--dark);
+  margin-bottom: 30px;
+}
+.banner .banner-content p {
+  margin-bottom: 30px;
+}
+.banner .banner-photo {
+  width: 580px;
+}
+
+/* Main Style */
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* About Style */
+.about {
+  margin: 100px 0;
+  text-align: center;
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  padding: 100px;
+}
+.about .about-content {
+  margin: 20px 0;
+}
+.about .about-info {
+  display: flex;
+  justify-content: space-between;
+}
+.about .about-info .info label {
+  font-size: 1.2rem;
+  color: var(--dark-30);
 }
