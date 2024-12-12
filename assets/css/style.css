@@ -1,0 +1,78 @@
+/* Default Style */
+:root {
+  --primary-color: #FD6E0A;
+  --bg-color: #FFF8F3;
+  --white: #fff;
+  --dark: #181818;
+  --dark-50: #474747;
+  --dark-30: #757575;
+  --primary-font: "Space Grotesk", sans-serif;
+}
+
+*{
+  font-family: var(--primary-font);
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+p {
+  color: --;
+  font-size: 1rem;
+}
+
+/* Common style */
+.primary-btn {
+  color: var(--white);
+  background-color: var(--primary-color);
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 15px 36px;
+  border-radius: 5px;
+  border: none;
+}
+.secondary-btn {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 15px 36px;
+  border-radius: 5px;
+  border: 2px solid var(--primary-color);
+}
+.title {
+  color: var(--dark);
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+/* Nav Style */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 200px;
+}
+nav h3 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+nav h3 span {
+  color: var(--primary-color);
+}
+nav > ul {
+  display: flex;
+  align-items: center;
+}
+nav li {
+  list-style: none;
+  margin-left: 20px;
+  font-size: 1.1rem;
+}
+nav li > a {
+  text-decoration: none;
+  color: var(--dark-50);
+}
+
+/* Header Style */
+.header {
+  background-color: var(--bg-color);
+}
