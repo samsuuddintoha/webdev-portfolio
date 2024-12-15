@@ -90,6 +90,9 @@ nav li > a {
 /* Header Style */
 .header {
   background-color: var(--bg-color);
+  background-image: url('../images/header_bg.png'), url('../images/developer.png');
+  background-repeat: no-repeat;
+  background-position: bottom right, top left;
 }
 
 /* Banner Style */
@@ -98,9 +101,6 @@ nav li > a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url('../images/header_bg.png');
-  background-repeat: no-repeat;
-  background-position: bottom right;
 }
 .banner .banner-content {
   max-width: 580px;
