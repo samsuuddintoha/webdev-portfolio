@@ -1,15 +1,16 @@
 /* Default Style */
 :root {
-  --primary-color: #FD6E0A;
-  --bg-color: #FFF8F3;
+  --primary-color: #fd6e0a;
+  --bg-color: #fff8f3;
   --white: #fff;
   --dark: #181818;
   --dark-50: #474747;
   --dark-30: #757575;
-  --primary-font: "Space Grotesk", sans-serif;
+  --dark-20: #a3a3a3;
+  --primary-font: 'Space Grotesk', sans-serif;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -40,6 +41,9 @@ p {
   border-radius: 5px;
   border: 2px solid var(--primary-color);
   margin: 0 5px;
+}
+section {
+  margin: 80px auto;
 }
 .section-title {
   color: var(--dark);
@@ -123,7 +127,6 @@ main {
 
 /* About Style */
 .about {
-  margin: 100px 0;
   text-align: center;
   background-color: var(--bg-color);
   border-radius: 10px;
@@ -138,20 +141,57 @@ main {
   color: var(--dark-30);
 }
 /* What I Do Section */
+.what-i-do .section-description {
+  padding: 0 80px;
+}
 .skills-container {
   display: flex;
   gap: 30px;
-  margin: 50px 0;
+  margin-top: 50px;
 }
 .skills-container .skill {
   background-color: var(--white);
-  box-shadow: 0px 6px 50px 0 rgb(0, 0, 0, .06);
+  box-shadow: 0px 6px 50px 0 rgb(0, 0, 0, 0.06);
   padding: 20px;
 }
 .skills-container .skill h4 {
+  color: var(--dark);
   font-size: 1.3rem;
   margin: 20px 0;
 }
 .skills-container .skill p {
   font-size: 1rem;
 }
+/* Resume Section */
+.resume-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.resume-column {
+  margin: 30px;
+}
+.resume-column-title {
+  color: var(--dark);
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+.resume-column hr {
+  margin: 20px 0;
+}
+.resume-item .resume-item-title {
+  color: var(--dark-50);
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+.resume-item .item-institute {
+  color: var(--dark-30);
+  font-size: 1.05rem;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+.resume-item .description {
+  font-size: 1rem;
+}
+/*  */
