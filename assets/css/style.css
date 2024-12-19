@@ -233,3 +233,50 @@ footer .contact-form input, textarea {
 footer .contact-form > button {
   margin-left: 0;
 }
+
+/* Responsive Style */
+@media screen and (max-width: 960px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+  .banner .banner-content .banner-greeting {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+  .banner .banner-content .banner-title {
+    font-size: 3rem;
+  }
+  nav,
+  .banner,
+  .about .about-container,
+  .skills-container,
+  .resume-container,
+  footer {
+    flex-direction: column;
+  }
+  nav,
+  .about .about-container {
+    gap: 15px;
+  }
+  nav,
+  .banner,
+  .about,
+  .what-i-do .section-description,
+  .skills-container,
+  footer {
+    padding: 20px;
+  }
+  .header {
+    background-image: none;
+  }
+  .banner .banner-photo,
+  footer .footer-column {
+    width: 100%;
+  }
+  .banner .banner-content {
+    max-width: 100%;
+  }
+  .banner {
+    padding-bottom: 0;
+  }
+}
